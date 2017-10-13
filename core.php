@@ -1,5 +1,5 @@
 <?php
-  if (strpos($_SERVER['HTTP_USER_AGENT'], 'Mobile') !== false) {
+  if (strpos($_SERVER['HTTP_USER_AGENT'], 'Mobile') !== false) {  //Client Device Detection
     $mo = '1';
     $devn = 'Mobile';
   } else {
@@ -7,11 +7,16 @@
       $mo = '2';
       $devn = 'Xbox';
     } else {
-      $mo = '0';
-      $devn = 'Computer';
+      if (strpos($_SERVER['HTTP_USER_AGENT'], 'PlayStation') !== false) {
+        $mo = '3';
+        $devn = 'PlayStation';
+      } else {
+        $mo = '0';
+        $devn = 'Computer';
+      }
     }
   }
-  if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false) {
+  if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false) {  //Client Browser Detection
     $brow = '0';
     $brown = 'Microsoft Internet Explorer';
   } else {
@@ -48,7 +53,7 @@
       }
     }
   }
-  if (strpos($_SERVER['HTTP_USER_AGENT'], 'Windows NT 6.1') !== false) {
+  if (strpos($_SERVER['HTTP_USER_AGENT'], 'Windows NT 6.1') !== false) {  //Client Operation System Detection
     $oper = '1';
     $operabil = '1';
     $opern = 'Windows 7';
@@ -141,7 +146,7 @@
       }
     }
   }
-  if (strpos($_SERVER['HTTP_USER_AGENT'], 'x64') !== false) {
+  if (strpos($_SERVER['HTTP_USER_AGENT'], 'x64') !== false) { //Client Operation System Bit Detection
     $bit = '1';
     $bitn = '64bit';
   } else {

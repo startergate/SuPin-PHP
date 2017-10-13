@@ -41,7 +41,7 @@
             echo "Operation System | No Support";
           } else {
             if ($operabil == '2') {
-              echo "Operation System | Unknown<";
+              echo "Operation System | Unknown";
             } else {
               echo "Operation System | Support";
             }

@@ -28,16 +28,19 @@
         } elseif (strpos($info, 'Firefox') !== false) {
             $brow = '3';
             $brown = 'Mozila Firefox';
-          } elseif (strpos($info, 'Chrome') !== false) {
+          } elseif (strpos($info, 'Whale') !== false) {
               $brow = '4';
-              $brown = 'Google Chrome';
-            } elseif (strpos($info, 'Safari') !== false) {
+              $brown = 'NAVER Whale';
+            } elseif (strpos($info, 'Chrome') !== false) {
                 $brow = '5';
-                $brown = 'Apple Safari';
-              } else {
-                $brow = '6';
-                $brown = 'Unknown Web Browser';
-              }
+                $brown = 'Google Chrome';
+              } elseif (strpos($info, 'Safari') !== false) {
+                  $brow = '6';
+                  $brown = 'Apple Safari';
+                } else {
+                  $brow = '7';
+                  $brown = 'Unknown Web Browser';
+                }
   if (strpos($info, 'Windows NT 6.1') !== false) {  //Client Operation System Detection
     $oper = '1';
     $operabil = '1';
@@ -107,6 +110,9 @@
     $bit = '1';
     $bitn = '64bit';
   } elseif (strpos($info, 'WOW64') !== false) {
+      $bit = '1';
+      $bitn = '64bit';
+    } elseif (strpos($info, 'Win64') !== false) {
       $bit = '1';
       $bitn = '64bit';
     } else {

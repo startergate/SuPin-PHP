@@ -1,4 +1,8 @@
 # SuPin-PHP
+
+>Project Stoped. Please use SuPin(JS Version)
+>https://github.com/startergate/SuPin
+--------
 Really Simple(?) Support Pin Generator(Really Basic, Use Only if, indexOf)
 
 This Web Page Designed for PHP 7. But It Requires PHP 5.6 or Higher.

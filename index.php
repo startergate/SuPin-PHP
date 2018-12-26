@@ -1,5 +1,5 @@
 <?php
-  require("./core.php");
+  require './core.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,43 +33,43 @@
         <h2><strong>Do</strong>Products™</h2>
         <h3>Your Support Code</h3>
         <?php
-          echo "<h1>".$mo.$brow.$oper.$bit."</h1>";
+          echo '<h1>'.$mo.$brow.$oper.$bit.'</h1>';
         ?>
       </header>
     </div>
     <div class="container">
   	  <header class="jumbotron text-left margin-erase">
         <?php
-          echo "Web Browser | ";
+          echo 'Web Browser | ';
           switch ($brow) {
             case 0:
-              echo "No Support";
+              echo 'No Support';
               break;
 
             case 6:
-              echo "Unknown";
+              echo 'Unknown';
               break;
 
             default:
-              echo "Support";
+              echo 'Support';
               break;
           }
           echo '<br />';
-          echo "Operation System | ";
+          echo 'Operation System | ';
           switch ($operabil) {
             case 0:
-              echo "No Support";
+              echo 'No Support';
               break;
 
             case 2:
-              echo "Unknown";
+              echo 'Unknown';
               break;
 
             default:
-              echo "Support";
+              echo 'Support';
               break;
           }
-          echo "<br />Kind of Client Device | ".$devn."<br />Client Web Browser | ".$brown."<br />Client Operation System | ".$opern."<br />Client Bit | ".$bitn."<br /><hr />".$_SERVER['HTTP_USER_AGENT'];
+          echo '<br />Kind of Client Device | '.$devn.'<br />Client Web Browser | '.$brown.'<br />Client Operation System | '.$opern.'<br />Client Bit | '.$bitn.'<br /><hr />'.$_SERVER['HTTP_USER_AGENT'];
         ?>
       </header>
     </div>

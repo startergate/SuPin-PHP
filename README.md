@@ -1,5 +1,6 @@
 # SuPin-PHP
 [![StyleCI](https://github.styleci.io/repos/128194564/shield?branch=master)](https://github.styleci.io/repos/128194564)
+[![Build Status](https://travis-ci.org/startergate/SuPin-PHP.svg?branch=master)](https://travis-ci.org/startergate/SuPin-PHP)
 >Project Stoped. Please use SuPin(JS Version)
 >https://github.com/startergate/SuPin
 --------

@@ -1,4 +1,5 @@
 <?php
+  if (empty($_SERVER['HTTP_USER_AGENT'])) exit;
   $info = $_SERVER['HTTP_USER_AGENT'];
   if (strpos($info, 'Mobile') !== false) {  //Client Device Detection
       $mo = '1';
